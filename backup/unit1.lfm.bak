@@ -1,0 +1,300 @@
+object Form1: TForm1
+  Left = 873
+  Height = 344
+  Top = 252
+  Width = 248
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Calculator'
+  ClientHeight = 344
+  ClientWidth = 248
+  Color = 16762172
+  OnCreate = FormCreate
+  LCLVersion = '1.4.4.0'
+  object BZero: TButton
+    Left = 8
+    Height = 40
+    Top = 294
+    Width = 91
+    Caption = '0'
+    OnClick = NumberClick
+    TabOrder = 0
+  end
+  object BComma: TButton
+    Left = 104
+    Height = 40
+    Top = 294
+    Width = 40
+    Caption = ','
+    OnClick = BCommaClick
+    TabOrder = 1
+  end
+  object BPlus: TButton
+    Left = 152
+    Height = 40
+    Top = 294
+    Width = 40
+    Caption = '+'
+    OnClick = OperClick
+    TabOrder = 2
+  end
+  object BEqual: TButton
+    Left = 200
+    Height = 86
+    Top = 248
+    Width = 40
+    Caption = '='
+    OnClick = EqualClick
+    TabOrder = 3
+  end
+  object Bone: TButton
+    Left = 8
+    Height = 40
+    Top = 248
+    Width = 40
+    Caption = '1'
+    OnClick = NumberClick
+    TabOrder = 4
+  end
+  object BTwo: TButton
+    Left = 56
+    Height = 41
+    Top = 248
+    Width = 43
+    Caption = '2'
+    OnClick = NumberClick
+    TabOrder = 5
+  end
+  object BThree: TButton
+    Left = 104
+    Height = 40
+    Top = 248
+    Width = 40
+    Caption = '3'
+    OnClick = NumberClick
+    TabOrder = 6
+  end
+  object BMinus: TButton
+    Left = 152
+    Height = 41
+    Top = 248
+    Width = 40
+    Caption = '-'
+    OnClick = OperClick
+    TabOrder = 7
+  end
+  object BFour: TButton
+    Left = 8
+    Height = 40
+    Top = 200
+    Width = 40
+    Caption = '4'
+    OnClick = NumberClick
+    TabOrder = 8
+  end
+  object BFive: TButton
+    Left = 56
+    Height = 40
+    Top = 200
+    Width = 40
+    Caption = '5'
+    OnClick = NumberClick
+    TabOrder = 9
+  end
+  object BSix: TButton
+    Left = 104
+    Height = 40
+    Top = 200
+    Width = 40
+    Caption = '6'
+    OnClick = NumberClick
+    TabOrder = 10
+  end
+  object BMult: TButton
+    Left = 152
+    Height = 40
+    Top = 200
+    Width = 40
+    Caption = '*'
+    OnClick = OperClick
+    TabOrder = 11
+  end
+  object BOneDivX: TButton
+    Left = 200
+    Height = 40
+    Top = 200
+    Width = 40
+    Caption = '1/x'
+    OnClick = BOneDivXClick
+    TabOrder = 12
+  end
+  object BSeven: TButton
+    Left = 8
+    Height = 40
+    Top = 152
+    Width = 40
+    Caption = '7'
+    OnClick = NumberClick
+    TabOrder = 13
+  end
+  object BEight: TButton
+    Left = 56
+    Height = 40
+    Top = 152
+    Width = 40
+    Caption = '8'
+    OnClick = NumberClick
+    TabOrder = 14
+  end
+  object BNine: TButton
+    Left = 104
+    Height = 40
+    Top = 152
+    Width = 40
+    Caption = '9'
+    OnClick = NumberClick
+    TabOrder = 15
+  end
+  object BDiv: TButton
+    Left = 152
+    Height = 40
+    Top = 152
+    Width = 40
+    Caption = '/'
+    OnClick = OperClick
+    TabOrder = 16
+  end
+  object BProc: TButton
+    Left = 200
+    Height = 40
+    Top = 152
+    Width = 40
+    Caption = '%'
+    OnClick = BProcClick
+    TabOrder = 17
+  end
+  object BDelLastChar: TButton
+    Left = 8
+    Height = 40
+    Top = 104
+    Width = 40
+    Caption = '←'
+    OnClick = BDelLastCharClick
+    TabOrder = 18
+  end
+  object BCe: TButton
+    Left = 56
+    Height = 40
+    Top = 104
+    Width = 40
+    Caption = 'CE'
+    OnClick = BCeClick
+    TabOrder = 19
+  end
+  object BC: TButton
+    Left = 104
+    Height = 40
+    Top = 104
+    Width = 40
+    Caption = 'C'
+    OnClick = BCClick
+    TabOrder = 20
+  end
+  object BCh: TButton
+    Left = 152
+    Height = 40
+    Top = 104
+    Width = 40
+    Caption = '±'
+    OnClick = BChClick
+    TabOrder = 21
+  end
+  object BSqrt: TButton
+    Left = 200
+    Height = 40
+    Top = 104
+    Width = 40
+    Caption = '√'
+    OnClick = BSqrtClick
+    TabOrder = 22
+  end
+  object BMc: TButton
+    Left = 8
+    Height = 40
+    Top = 56
+    Width = 40
+    Caption = 'MC'
+    Color = clBackground
+    Font.Color = clHotLight
+    OnClick = BMcClick
+    ParentFont = False
+    TabOrder = 23
+  end
+  object BMr: TButton
+    Left = 56
+    Height = 40
+    Top = 56
+    Width = 40
+    Caption = 'MR'
+    OnClick = BMrClick
+    TabOrder = 24
+  end
+  object BMs: TButton
+    Left = 104
+    Height = 40
+    Top = 56
+    Width = 40
+    Caption = 'MS'
+    OnClick = BMsClick
+    TabOrder = 25
+  end
+  object BMPlus: TButton
+    Left = 152
+    Height = 40
+    Top = 56
+    Width = 40
+    Caption = 'M+'
+    OnClick = BMPlusClick
+    TabOrder = 26
+  end
+  object BMMinus: TButton
+    Left = 200
+    Height = 40
+    Top = 56
+    Width = 40
+    Caption = 'M-'
+    OnClick = BMMinusClick
+    TabOrder = 27
+  end
+  object Pole: TEdit
+    Left = 8
+    Height = 24
+    Top = 24
+    Width = 232
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 28
+    Text = '0'
+  end
+  object MemIndicator: TLabel
+    Left = 228
+    Height = 17
+    Top = 8
+    Width = 12
+    Caption = 'M'
+    Color = 16762172
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    Transparent = False
+    Visible = False
+  end
+end
